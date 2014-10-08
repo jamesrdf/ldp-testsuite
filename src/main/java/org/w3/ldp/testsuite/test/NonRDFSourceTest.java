@@ -346,8 +346,7 @@ public class NonRDFSourceTest extends CommonResourceTest {
 			groups = {MUST},
 			description = "When a contained LDPR is deleted, and the LDPC server created an"+
 					"associated LDP-RS (see the LDPC POST section), the LDPC server must also"+
-					"delete the associated LDP-RS it created.",
-			dependsOnMethods = "testPostResourceAndCheckAssociatedResource")
+					"delete the associated LDP-RS it created.")
 	@SpecTest(
 			specRefUri = LdpTestSuite.SPEC_URI + "#ldpc-del-contremovescontres",
 			testMethod = METHOD.AUTOMATED,
@@ -417,8 +416,7 @@ public class NonRDFSourceTest extends CommonResourceTest {
 			groups = {MUST},
 			description = "When responding to requests whose request-URI is a LDP-NR with an"+
 					"associated LDP-RS, a LDPC server must provide the same HTTP Link response"+
-					"header as is required in the create response",
-			dependsOnMethods = "testPostResourceAndCheckAssociatedResource")
+					"header as is required in the create response")
 	@SpecTest(
 			specRefUri = LdpTestSuite.SPEC_URI + "#ldpc-options-linkmetahdr",
 			testMethod = METHOD.AUTOMATED,
